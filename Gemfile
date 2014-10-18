@@ -1,35 +1,46 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0.beta2'
-# PG
-gem 'pg'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0.0.beta1'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'rails', '4.1.4'
 
-# Use jQuery as the JavaScript library
-gem 'jquery-rails', '~> 4.0.0.beta2'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'pg'
+
+gem 'sass-rails', '~> 4.0.3'
+
+gem 'uglifier', '>= 1.3.0'
+
+gem 'coffee-rails', '~> 4.0.0'
+
+gem 'jquery-rails'
+
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
+
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'devise', '~> 3.3.0'
+
+gem 'seed_dump', '~> 3.2.0'
+
+gem 'activeadmin', github: 'activeadmin'
+
+gem 'active_skin', '~> 0.0.7'
+
+gem 'carrierwave-dropbox', '~> 1.2.1'
+
+gem 'annotate', '~> 2.6.5'
+
+gem "schema_plus", '~> 1.6.0'
 
 ##Assets
 #Normalize styles
 #*= require normalize-rails
-gem 'normalize-rails'
+gem 'normalize-rails', '3.0.1'
 
 #Jquery chosen
 #//= require chosen-jquery y el *= require chosen
-gem 'chosen-rails'
+gem 'chosen-rails', '~> 1.1.0'
 
 #Handlebars templating
 #Agregar //= require handlebars
@@ -37,7 +48,7 @@ gem 'handlebars-rails', :git => 'git://github.com/kolo/handlebars-rails.git'
 
 #Boxes
 #//= require fancybox y *= require fancybox
-gem 'fancybox-rails'
+gem 'fancybox-rails', '0.2.1'
 
 gem 'rails_12factor', group: :production
 
