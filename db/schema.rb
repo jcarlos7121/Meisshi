@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141018151705) do
+ActiveRecord::Schema.define(version: 20141018154324) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,6 +45,33 @@ ActiveRecord::Schema.define(version: 20141018151705) do
     t.datetime "updated_at"
     t.index ["email"], :name => "index_admin_users_on_email", :unique => true
     t.index ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet     "current_sign_in_ip"
+    t.inet     "last_sign_in_ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["email"], :name => "index_users_on_email", :unique => true
+    t.index ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+  end
+
+  create_table "cards", force: true do |t|
+    t.string   "name"
+    t.string   "image"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["user_id"], :name => "fk__cards_user_id"
+    t.foreign_key ["user_id"], "users", ["id"], :on_update => :no_action, :on_delete => :no_action, :name => "fk_cards_user_id"
   end
 
   create_table "template_cards", force: true do |t|
