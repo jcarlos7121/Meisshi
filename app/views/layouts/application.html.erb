@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="Meisshi, card creator">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   <title>Meisshi</title>
+  <%= favicon_link_tag 'favicon.ico' %>
+ 
+  <!-- Facebook OG -->
+  <meta property="og:title" content="Meisshi">
+  <meta property="og:url" content="index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Meisshi card creator.">
+  <meta property="og:site_name" content="">
+  <!-- end Facebook OG -->
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <script src="http://use.typekit.net/bfd8kun.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
 </head>
 <body>
 

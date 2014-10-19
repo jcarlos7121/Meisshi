@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require modernizr
+//= require video
+//= require easing
+//= require coming
 //= require_tree .
