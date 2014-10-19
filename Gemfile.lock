@@ -111,10 +111,18 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    dotenv (1.0.2)
+    dotenv-rails (1.0.2)
+      dotenv (= 1.0.2)
     dropbox-sdk (1.6.4)
       json
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     fancybox-rails (0.2.1)
       railties (>= 3.1.0)
     formtastic (3.0.0)
@@ -274,6 +282,8 @@ DEPENDENCIES
   chosen-rails (~> 1.1.0)
   coffee-rails (~> 4.0.0)
   devise (~> 3.3.0)
+  dotenv-rails
+  factory_girl_rails
   fancybox-rails (= 0.2.1)
   handlebars-rails!
   jbuilder (~> 2.0)

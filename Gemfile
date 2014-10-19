@@ -33,6 +33,8 @@ gem 'annotate', '~> 2.6.5'
 
 gem "schema_plus", '~> 1.6.0'
 
+gem 'factory_girl_rails'
+
 ##Assets
 #Normalize styles
 #*= require normalize-rails
@@ -60,6 +62,7 @@ group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry-byebug'
+  gem 'dotenv-rails'
   gem "better_errors"
   gem "binding_of_caller"
   gem 'rspec-rails', '~> 3.0.0'
