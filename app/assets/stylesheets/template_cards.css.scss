@@ -1,0 +1,18 @@
+// Place all the styles related to the template_cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.template_cards{
+  .template_card {
+    width: 20%;
+    display: inline-block;
+    background: rgba(255, 253, 253, 0.7);
+    margin: 30px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px black;
+
+    img {
+      width: 100%;
+    }
+  }
+}

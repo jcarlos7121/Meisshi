@@ -11,7 +11,9 @@
           <li><a href="#anchor-2" data-trigger>Features</a></li>
           <li><a href="#anchor-3" data-trigger>Support</a></li>
           <li><a href="mailto:jchinojob7@gmail.com">Contact</a></li>
-          <li class="signin last"><a href="#anchor-5" class="button" data-trigger>Sign in</a></li>
+          <li class="signin last">
+            <%= link_to "Sign in", user_session_path, class: "button", method: :post %>
+          </li>
         </ul>
       </div>
     </nav>
@@ -21,7 +23,7 @@
     <header class="header">
       <h1>Create any type of card in seconds.</h1>
       <p class="subtitle">Meisshi is a card editor, just select a template and you are ready to go</p>
-      <a href="#anchor-5" class="button" data-trigger>Try our beta!!</a>
+      <%= link_to "Try our beta!!", user_session_path, class: "button", method: :post %>
     </header>
     <!-- end Header -->
   </section>

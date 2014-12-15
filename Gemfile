@@ -35,6 +35,8 @@ gem "schema_plus", '~> 1.6.0'
 
 gem 'factory_girl_rails'
 
+gem 'backbone-on-rails'
+
 ##Assets
 #Normalize styles
 #*= require normalize-rails
